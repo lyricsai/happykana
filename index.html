@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kana</title>
+        <link rel="stylesheet" href="./style.css" />
+        <meta name="msapplication-TileColor" content="coral" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
+        <meta
+            name="description"
+            content="Japanese alphabet learning app, katakana, hiragana and romaji"
+        />
+        <meta
+            name="keywords"
+            content="Japanese, alphabet, learning, app, katakana, hiragana, romaji"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff7f50" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ff7f50" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header"></header>
+            <main class="main">
+                <h1>Learn some kana today</h1>
+                <div id="learn__btn" class="learn__btn kana__type">
+                    <button type="button" id="learn__hiragana" class="selected">
+                        ひらがな
+                    </button>
+                    <button type="button" id="learn__katakana">カタカナ</button>
+                    <button type="button" id="learn__romaji">romaji</button>
+                </div>
+                <div id="card" class="card">
+                    <div><h2 id="card__kana">あ</h2></div>
+                    <div id="card__answers" class="card__answers">
+                        <button type="button" class="answer">
+                            <h3>ア</h3>
+                        </button>
+                        <button type="button" class="answer">
+                            <h3>イ</h3>
+                        </button>
+                        <button type="button" class="answer">
+                            <h3>オ</h3>
+                        </button>
+                    </div>
+                </div>
+                <div id="answer__btn" class="answer__btn kana__type">
+                    <button type="button" id="answer__hiragana">
+                        ひらがな
+                    </button>
+                    <button
+                        type="button"
+                        id="answer__katakana"
+                        class="selected"
+                    >
+                        カタカナ
+                    </button>
+                    <button type="button" id="answer__romaji">romaji</button>
+                </div>
+            </main>
+            <footer class="footer">happy kana</footer>
+        </div>
+        <script defer src="./script.js"></script>
+    </body>
+</html>

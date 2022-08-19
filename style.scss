@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    background: #ff7f50;
+    color: azure;
+    height: 100vh;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+button {
+    margin: 0.5rem;
+    width: 100px;
+    height: 30px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 4px 10px #fcb;
+    color: rgb(168, 15, 15);
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background: azure;
+        color: coral;
+        transition: all 0.3s ease 0s;
+    }
+    &:active {
+        transform: translate(2px, 2px);
+        transition: all 0.3s ease 0s;
+    }
+}
+
+h1,
+footer {
+    font-style: oblique;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 400px;
+}
+
+.learn__btn button {
+}
+
+.answer__btn button {
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 10rem;
+}
+
+.card {
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    width: 90%;
+    border: 1px solid lightgray;
+}
+
+.card__kana {
+    min-height: 200px;
+}
+
+.card__answers {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.answer {
+    height: 50px;
+    width: 50px;
+    border: 1px solid lightgray;
+    background: none;
+    color: azure;
+    box-shadow: none;
+    &:disabled {
+        background: lightgray;
+        color: gray;
+        opacity: 0.5;
+        cursor: not-allowed;
+        &:hover {
+            transform: translate(0, 0);
+        }
+    }
+    &.active {
+        box-shadow: inset 0px 0px 10px red, 0px 2px 20px red;
+        background: red;
+        border: none;
+        transition: all 0.3s ease 0s;
+    }
+    &.active.right {
+        box-shadow: inset 0px 0px 10px #fcb, 0px 2px 20px #fcb;
+        background: azure;
+        color: coral;
+    }
+}
+
+.kana__type .selected {
+    background: coral;
+    color: azure;
+    box-shadow: inset 0px 0px 5px #fcb, 1px 4px 10px #fcb;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background: coral;
+        color: azure;
+    }
+}

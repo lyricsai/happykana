@@ -1,0 +1,314 @@
+[
+    {
+        "hiragana": "あ",
+        "katakana": "ア",
+        "romaji": "a",
+        "showed": 0
+    },
+    {
+        "hiragana": "い",
+        "katakana": "イ",
+        "romaji": "i",
+        "showed": 0
+    },
+    {
+        "hiragana": "う",
+        "katakana": "ウ",
+        "romaji": "u",
+        "showed": 0
+    },
+    {
+        "hiragana": "え",
+        "katakana": "エ",
+        "romaji": "e",
+        "showed": 0
+    },
+    {
+        "hiragana": "お",
+        "katakana": "オ",
+        "romaji": "o",
+        "showed": 0
+    },
+    {
+        "hiragana": "か",
+        "katakana": "カ",
+        "romaji": "ka",
+        "showed": 0
+    },
+    {
+        "hiragana": "き",
+        "katakana": "キ",
+        "romaji": "ki",
+        "showed": 0
+    },
+    {
+        "hiragana": "く",
+        "katakana": "ク",
+        "romaji": "ku",
+        "showed": 0
+    },
+    {
+        "hiragana": "け",
+        "katakana": "ケ",
+        "romaji": "ke",
+        "showed": 0
+    },
+    {
+        "hiragana": "こ",
+        "katakana": "コ",
+        "romaji": "ko",
+        "showed": 0
+    },
+    {
+        "hiragana": "さ",
+        "katakana": "サ",
+        "romaji": "sa",
+        "row": "s",
+        "showed": 0
+    },
+    {
+        "hiragana": "し",
+        "katakana": "シ",
+        "romaji": "shi",
+        "row": "s",
+        "showed": 0
+    },
+    {
+        "hiragana": "す",
+        "katakana": "ス",
+        "romaji": "su",
+        "row": "s",
+        "showed": 0
+    },
+    {
+        "hiragana": "せ",
+        "katakana": "セ",
+        "romaji": "se",
+        "row": "s",
+        "showed": 0
+    },
+    {
+        "hiragana": "そ",
+        "katakana": "ソ",
+        "romaji": "so",
+        "row": "s",
+        "showed": 0
+    },
+    {
+        "hiragana": "た",
+        "katakana": "タ",
+        "romaji": "ta",
+        "row": "t",
+        "showed": 0
+    },
+    {
+        "hiragana": "ち",
+        "katakana": "チ",
+        "romaji": "chi",
+        "row": "t",
+        "showed": 0
+    },
+    {
+        "hiragana": "つ",
+        "katakana": "ツ",
+        "romaji": "tsu",
+        "row": "t",
+        "showed": 0
+    },
+    {
+        "hiragana": "て",
+        "katakana": "テ",
+        "romaji": "te",
+        "row": "t",
+        "showed": 0
+    },
+    {
+        "hiragana": "と",
+        "katakana": "ト",
+        "romaji": "to",
+        "row": "t",
+        "showed": 0
+    },
+    {
+        "hiragana": "な",
+        "katakana": "ナ",
+        "romaji": "na",
+        "row": "n",
+        "showed": 0
+    },
+    {
+        "hiragana": "に",
+        "katakana": "二",
+        "romaji": "ni",
+        "row": "n",
+        "showed": 0
+    },
+    {
+        "hiragana": "ぬ",
+        "katakana": "ヌ",
+        "romaji": "nu",
+        "row": "n",
+        "showed": 0
+    },
+    {
+        "hiragana": "ね",
+        "katakana": "ネ",
+        "romaji": "ne",
+        "row": "n",
+        "showed": 0
+    },
+    {
+        "hiragana": "の",
+        "katakana": "ノ",
+        "romaji": "no",
+        "row": "n",
+        "showed": 0
+    },
+    {
+        "hiragana": "は",
+        "katakana": "ハ",
+        "romaji": "ha",
+        "row": "h",
+        "showed": 0
+    },
+    {
+        "hiragana": "ひ",
+        "katakana": "ヒ",
+        "romaji": "hi",
+        "row": "h",
+        "showed": 0
+    },
+    {
+        "hiragana": "ふ",
+        "katakana": "フ",
+        "romaji": "fu",
+        "row": "h",
+        "showed": 0
+    },
+    {
+        "hiragana": "へ",
+        "katakana": "ヘ",
+        "romaji": "he",
+        "row": "h",
+        "showed": 0
+    },
+    {
+        "hiragana": "ほ",
+        "katakana": "ホ",
+        "romaji": "ho",
+        "row": "h",
+        "showed": 0
+    },
+    {
+        "hiragana": "ま",
+        "katakana": "マ",
+        "romaji": "ma",
+        "row": "m",
+        "showed": 0
+    },
+    {
+        "hiragana": "み",
+        "katakana": "ミ",
+        "romaji": "mi",
+        "row": "m",
+        "showed": 0
+    },
+    {
+        "hiragana": "む",
+        "katakana": "ム",
+        "romaji": "mu",
+        "row": "m",
+        "showed": 0
+    },
+    {
+        "hiragana": "め",
+        "katakana": "メ",
+        "romaji": "me",
+        "row": "m",
+        "showed": 0
+    },
+    {
+        "hiragana": "も",
+        "katakana": "モ",
+        "romaji": "mo",
+        "row": "m",
+        "showed": 0
+    },
+    {
+        "hiragana": "や",
+        "katakana": "ヤ",
+        "romaji": "ya",
+        "row": "y",
+        "showed": 0
+    },
+    {
+        "hiragana": "ゆ",
+        "katakana": "ユ",
+        "romaji": "ゆ",
+        "row": "y",
+        "showed": 0
+    },
+    {
+        "hiragana": "よ",
+        "katakana": "ヨ",
+        "romaji": "yo",
+        "row": "y",
+        "showed": 0
+    },
+    {
+        "hiragana": "ら",
+        "katakana": "ラ",
+        "romaji": "ra",
+        "row": "r",
+        "showed": 0
+    },
+    {
+        "hiragana": "り",
+        "katakana": "リ",
+        "romaji": "ri",
+        "row": "r",
+        "showed": 0
+    },
+    {
+        "hiragana": "る",
+        "katakana": "ル",
+        "romaji": "ru",
+        "row": "r",
+        "showed": 0
+    },
+    {
+        "hiragana": "れ",
+        "katakana": "レ",
+        "romaji": "re",
+        "row": "r",
+        "showed": 0
+    },
+    {
+        "hiragana": "ろ",
+        "katakana": "ロ",
+        "romaji": "ro",
+        "row": "r",
+        "showed": 0
+    },
+    {
+        "hiragana": "わ",
+        "katakana": "ワ",
+        "romaji": "wa",
+        "row": "w",
+        "showed": 0
+    },
+    {
+        "hiragana": "を",
+        "katakana": "ヲ",
+        "romaji": "wo",
+        "row": "w",
+        "showed": 0
+    },
+    {
+        "hiragana": "ん",
+        "katakana": "ン",
+        "romaji": "n",
+        "row": "n＿",
+        "showed": 0
+    }
+]
