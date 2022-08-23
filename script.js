@@ -69,6 +69,9 @@ const study = () => {
     const renderCardKana = () => {
         cardKana.removeChild(cardKana.firstChild);
         cardKana.appendChild(document.createTextNode(kanaItem[optionLearn]));
+        cardKana.style.fontSize = '7rem';
+        cardKana.style.top = '2rem';
+        cardKana.style.textShadow = 'none';
     };
 
 
@@ -152,7 +155,14 @@ const study = () => {
         element.classList.add('selected');
         if(element.classList.contains('right')) {
 
+            cardKana.style.fontSize = '9rem';
+            cardKana.style.top = '.5rem';
+            cardKana.style.textShadow = '1px 12px 11px #fcb';
+            cardKana.style.transition = 'all 0.3s ease-in 0s';
+            kanaItem.showed++;
+            localStorage.setItem('kana', JSON.stringify(kana));
             setTimeout(rerender, 500);
+
 
         } else {
             element.disabled = true;

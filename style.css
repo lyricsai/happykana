@@ -7,7 +7,7 @@
 
 body {
   font-family: serif;
-  background: coral;
+  background: #ff7f50;
   color: azure;
   height: 100vh;
   padding: 1rem 0;
@@ -51,6 +51,7 @@ footer {
 h2 {
   font-size: 7rem;
   font-weight: 500;
+  width: 100%;
 }
 
 h3 {
@@ -94,19 +95,7 @@ main {
 
 .card {
   min-height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  position: relative;
   border-radius: 0.5rem;
   margin: 1rem auto;
   width: 90%;
@@ -114,10 +103,15 @@ main {
 }
 
 .card__kana {
+  position: absolute;
   min-height: 200px;
+  top: 2rem;
+  text-shadow: #fcb;
 }
 
 .card__answers {
+  position: absolute;
+  bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +143,7 @@ main {
           transform: translate(0, 0);
 }
 
-.answer.selected {
+.answer.active {
   -webkit-box-shadow: inset 0px 0px 10px red, 0px 2px 20px red;
           box-shadow: inset 0px 0px 10px red, 0px 2px 20px red;
   background: red;
@@ -158,7 +152,7 @@ main {
   transition: all 0.3s ease 0s;
 }
 
-.answer.selected.right {
+.answer.active.right {
   -webkit-box-shadow: inset 0px 0px 10px #fcb, 0px 2px 20px #fcb;
           box-shadow: inset 0px 0px 10px #fcb, 0px 2px 20px #fcb;
   background: azure;
