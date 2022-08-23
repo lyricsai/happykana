@@ -1,6 +1,6 @@
 const study = () => {
-    const learn = document.querySelector('#learn__btn');
-    const answer = document.querySelector('#answer__btn');
+    const learnBtns = document.querySelector('#learn__btn');
+    const answerBtns = document.querySelector('#answer__btn');
     const cardKana = document.querySelector('#card__kana');
     const cardAnswers = document.querySelector('#card__answers');
 
@@ -19,6 +19,8 @@ const study = () => {
         let res = await data.json();
         kana = res;
         localStorage.setItem('kana', JSON.stringify(res));
+        console.log('reload');
+        location.reload();
     }
 
     if(localStorage.getItem('kana')?.length) {
@@ -64,11 +66,13 @@ const study = () => {
         }
     };
 
-    const renderCardKana = () => cardKana.innerText = kanaItem[optionLearn];
+    const renderCardKana = () => {
+        cardKana.removeChild(cardKana.firstChild);
+        cardKana.appendChild(document.createTextNode(kanaItem[optionLearn]));
+    };
 
 
     const renderCardAnswers = () => {
-
 
         let answerChoices = [kanaItem[optionAnswer], ...wrongChoices.map(e => e[optionAnswer])];
 
@@ -80,19 +84,7 @@ const study = () => {
             } else {
                 element.classList.remove('right');
             }
-            element.addEventListener('click', (e) => {
-                element.classList.add('selected');
-                if(element.classList.contains('right')) {
 
-                    setTimeout(() => {
-
-                        rerender();
-
-                    }, 500);
-                } else {
-                    element.disabled = true;
-                }
-            });
         });
     };
 
@@ -137,7 +129,9 @@ const study = () => {
         kanaItem = kana[kanaItemIndex];
         wrong__one = getRandomIndex();
         wrong__second = getRandomIndex();
+
         selectWrongChoices();
+
         answers.forEach(e => {
             e.classList.remove('selected');
             e.disabled = false;
@@ -148,10 +142,22 @@ const study = () => {
     setTimeout(learnKana, 500);
 
 
-    learn.addEventListener('click', selectOptionLearn);
-    answer.addEventListener('click', selectOptionAnswer);
-    learn.addEventListener('touchend', selectOptionLearn);
-    answer.addEventListener('touchend', selectOptionAnswer);
+    learnBtns.addEventListener('click', selectOptionLearn);
+    answerBtns.addEventListener('click', selectOptionAnswer);
+    learnBtns.addEventListener('touchend', selectOptionLearn);
+    answerBtns.addEventListener('touchend', selectOptionAnswer);
+
+
+    answers.forEach(element => element.addEventListener('click', (e) => {
+        element.classList.add('selected');
+        if(element.classList.contains('right')) {
+
+            setTimeout(rerender, 500);
+
+        } else {
+            element.disabled = true;
+        }
+    }));
 };
 
 study();
