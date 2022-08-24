@@ -7,6 +7,7 @@
     "background_color": "coral",
     "theme_color": "#ff7f50",
     "scope": "./",
+    "description": "Japanese alphabet learning app.",
     "icons": [
         {
             "src": "assets/icons/icon-72x72.png",

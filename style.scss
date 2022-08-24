@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: serif;
     background: #ff7f50;
@@ -12,7 +11,6 @@ body {
     padding: 1rem 0;
     text-align: center;
 }
-
 button {
     margin: 0.5rem;
     width: 100px;
@@ -23,7 +21,6 @@ button {
     box-shadow: 1px 4px 10px #fcb;
     color: rgb(168, 15, 15);
     transition: all 0.3s ease 0s;
-
     &:hover {
         background: azure;
         color: coral;
@@ -34,24 +31,20 @@ button {
         transition: all 0.3s ease 0s;
     }
 }
-
 h1,
 footer {
     font-style: oblique;
     padding-bottom: 1rem;
 }
-
 h2 {
     font-size: 7rem;
     font-weight: 500;
     width: 100%;
 }
-
 h3 {
     font-size: 2rem;
     font-weight: 500;
 }
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -61,13 +54,6 @@ h3 {
     padding: 0.5rem;
     max-width: 400px;
 }
-
-.learn__btn button {
-}
-
-.answer__btn button {
-}
-
 main {
     flex: 1 1 auto;
     display: flex;
@@ -75,7 +61,6 @@ main {
     justify-content: space-evenly;
     padding-bottom: 10rem;
 }
-
 .card {
     min-height: 20rem;
     position: relative;
@@ -84,13 +69,11 @@ main {
     width: 90%;
     border: 1px solid lightgray;
 }
-
 .card__kana {
     position: absolute;
     min-height: 200px;
     top: 2rem;
 }
-
 .card__answers {
     position: absolute;
     bottom: 2rem;
@@ -98,7 +81,6 @@ main {
     justify-content: space-evenly;
     width: 100%;
 }
-
 .answer {
     height: 50px;
     width: 50px;
@@ -116,22 +98,21 @@ main {
         }
     }
     &.active {
-        box-shadow: inset 0px 0px 10px red, 0px 2px 20px red;
+        box-shadow: inset 0 0 10px red, 0 2px 20px red;
         background: red;
         border: none;
         transition: all 0.3s ease 0s;
     }
     &.active.right {
-        box-shadow: inset 0px 0px 10px #fcb, 0px 2px 20px #fcb;
+        box-shadow: inset 0 0 10px #fcb, 0 2px 20px #fcb;
         background: azure;
         color: coral;
     }
 }
-
 .kana__type .selected {
     background: coral;
     color: azure;
-    box-shadow: inset 0px 0px 5px #fcb, 1px 4px 10px #fcb;
+    box-shadow: inset 0 0 5px #fcb, 1px 4px 10px #fcb;
     transition: all 0.3s ease 0s;
     &:hover {
         background: coral;

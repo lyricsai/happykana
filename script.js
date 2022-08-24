@@ -179,3 +179,17 @@ window.onload = () => {
         navigator.serviceWorker.register("./sw.js");
     }
 };
+
+
+var isHappy = function(n) {
+    let obj = {};
+    let arr = Array.from(String(n));
+    while(!obj[n] && n !== 1) {
+        n = arr.reduce((acc, curr) => acc += curr * curr, 0);
+        obj[n] = true;
+    }
+    console.log(n, obj);
+    return n === 1 ? true : false;
+};
+
+console.log(isHappy(1111111));
